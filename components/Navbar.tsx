@@ -34,12 +34,10 @@ import {
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
-          minH={'60px'}
+          minH={'123px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
-          borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}>
           <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -55,7 +53,9 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-              <Image maxW='20%' src='https://myheartcreative.b-cdn.net/wp-content/uploads/2022/06/myheartcreative-in-logo.png' alt='myheartcreative' />
+            <Link href='/' isExternal>
+              <Image maxW={{ base: '160%', md: '50%' }} src='https://myheartcreative.b-cdn.net/wp-content/uploads/2022/06/myheartcreative-in-logo.png' alt='myheartcreative' />
+            </Link>
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <Center>
               <DesktopNav />
@@ -71,7 +71,8 @@ import {
             <Button
               as={'a'}
               display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
+              borderRadius="120px"
+              fontSize={'14px'}
               fontWeight={600}
               color={'white'}
               bg={'#212121'}
@@ -106,7 +107,7 @@ import {
                 <Link
                   p={2}
                   href={navItem.href ?? '#'}
-                  fontSize={'sm'}
+                  fontSize={'14px'}
                   fontWeight={500}
                   color={linkColor}
                   _hover={{
@@ -245,7 +246,7 @@ import {
   
   const NAV_ITEMS: Array<NavItem> = [
     {
-      label: 'Inspiration',
+      label: 'About',
       children: [
         {
           label: 'Explore Design Work',
@@ -260,7 +261,7 @@ import {
       ],
     },
     {
-      label: 'Find Work',
+      label: 'Expertise',
       children: [
         {
           label: 'Job Board',
@@ -275,11 +276,15 @@ import {
       ],
     },
     {
-      label: 'Learn Design',
+      label: 'Portfolio',
       href: '#',
     },
     {
-      label: 'Hire Designers',
+      label: 'Blog',
+      href: '#',
+    },
+    {
+      label: 'Contact',
       href: '#',
     },
   ];
