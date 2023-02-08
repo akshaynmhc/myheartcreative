@@ -75,10 +75,10 @@ import {
               fontSize={'14px'}
               fontWeight={600}
               color={'white'}
-              bg={'#212121'}
+              bg={'brand.grey'}
               href={'#'}
               _hover={{
-                bg: '#d12f38',
+                bg: 'brand.red',
               }}>
               Start a Project
             </Button>
